@@ -1,0 +1,3 @@
+Write a short sample program to familiarize with FileInputStream
+Write TreeNode class implememnting Comparable interface
+Write the program to read a file and create the Huffman TreeNode
