@@ -1,0 +1,50 @@
+
+Write and debug insert first
+THen deleteMax
+then sort
+then doubling test
+
+
+boolean less(K u, K v) { return (u.compareTo(v) < 0); 
+
+void exch(Node n,m)
+   // exchange the data in the two nodes
+
+void swim(Node n){
+
+    while n is not the root and n's value is greater than its parent's value
+        exch(n, n.parent);
+
+}
+
+void insert(Value){
+     n = new Node(Value);
+     add n to the end of the heap; 
+         // size of the heap is increased by 1
+         // use the binary form of the size to find the position of the new node
+         // the new node
+         // add it there... 
+         // make sure to fix the parent and child pointers
+     swim(n);
+}
+
+voi sink(Node n){
+    
+        while (n has at least one child)
+             Let c be the maximum of the (possibly two) child
+             if n's value is less than c's value
+                exch(n, c)
+             else
+                break
+    
+}
+
+void deleteMax(){
+    v = root's value;
+    exch(root, last node);
+    delete last node;
+     // use  the size to find the last node (binary etc etc)
+     // exxhc values with root
+     // delete the last node (adjust child/parent pointers)
+    sink(root);
+}
